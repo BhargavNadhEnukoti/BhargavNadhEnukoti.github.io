@@ -7,14 +7,13 @@
 <style>
 body{
   margin:0;
-  font-family:Arial, sans-serif;
-  background:#0f172a;
+  font-family:Segoe UI, sans-serif;
+  background:#0b1120;
   color:white;
-  line-height:1.6;
 }
 
 section{
-  padding:60px 10%;
+  padding:80px 12%;
 }
 
 h1,h2{
@@ -22,31 +21,46 @@ h1,h2{
 }
 
 .hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
-  padding:120px 10%;
+  background:linear-gradient(#020617,#0b1120);
+}
+
+.button{
+  background:#38bdf8;
+  color:black;
+  padding:12px 20px;
+  margin:10px;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 
 .card{
   background:#1e293b;
-  padding:20px;
-  margin:15px 0;
-  border-radius:10px;
+  padding:25px;
+  border-radius:12px;
+  transition:0.3s;
 }
 
-.skills{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+.card:hover{
+  transform:translateY(-5px);
 }
 
-a.button{
-  background:#38bdf8;
-  color:black;
-  padding:10px 18px;
-  text-decoration:none;
-  border-radius:6px;
-  margin:5px;
-  display:inline-block;
+.stat{
+  font-size:40px;
+  font-weight:bold;
+  color:#38bdf8;
 }
 </style>
 </head>
@@ -56,32 +70,39 @@ a.button{
 <!-- HERO -->
 <section class="hero">
 <h1>Bhargav Nadh Enukoti</h1>
-<p>Data Scientist | Machine Learning | Python & SQL | Cloud Platforms</p>
+<p>Data Scientist | Machine Learning & Advanced Analytics | Python & SQL | Cloud Platforms</p>
 
 <a class="button" href="mailto:ebhargavnadh@gmail.com">Email Me</a>
-<a class="button" href="https://linkedin.com" target="_blank">LinkedIn</a>
+<a class="button" href="https://linkedin.com/in/bhargavnadh-enukoti-759162349" target="_blank">LinkedIn</a>
 </section>
 
 <!-- SUMMARY -->
 <section>
 <h2>Professional Summary</h2>
-<p>
-Data Scientist with experience building end-to-end analytics solutions,
-from data cleaning and feature engineering to deployment and visualization.
-Currently pursuing MSc in Data Science at University of Greenwich.
-</p>
+<div class="card">
+Data Scientist experienced in end-to-end analytics including data cleaning,
+feature engineering, modeling, deployment, and visualization. Currently
+pursuing MSc Data Science at University of Greenwich.
+</div>
 </section>
 
 <!-- SKILLS -->
 <section>
 <h2>Core Technical Skills</h2>
-<div class="skills">
+<div class="grid">
 <div class="card">Data Visualization</div>
 <div class="card">Data Modeling</div>
 <div class="card">Big Data Processing</div>
-<div class="card">Machine Learning</div>
-<div class="card">Python & SQL</div>
-<div class="card">Cloud Platforms (AWS & Azure)</div>
+</div>
+</section>
+
+<!-- TECH EXPERTISE -->
+<section>
+<h2>Technical Expertise</h2>
+<div class="grid">
+<div class="card"><b>Python & SQL</b><br>Machine learning & analytics</div>
+<div class="card"><b>Databricks</b><br>Scalable data pipelines</div>
+<div class="card"><b>AWS & Azure</b><br>Cloud deployment</div>
 </div>
 </section>
 
@@ -92,9 +113,9 @@ Currently pursuing MSc in Data Science at University of Greenwich.
 <h3>Custom Software Analyst — Accenture</h3>
 <p>Dec 2022 – Dec 2024</p>
 <ul>
-<li>Developed data-driven ML solutions</li>
-<li>Built scalable data pipelines</li>
-<li>Worked on end-to-end analytics projects</li>
+<li>Developed ML-driven data solutions</li>
+<li>Built scalable analytics pipelines</li>
+<li>Delivered end-to-end analytics projects</li>
 </ul>
 </div>
 </section>
@@ -102,23 +123,36 @@ Currently pursuing MSc in Data Science at University of Greenwich.
 <!-- EDUCATION -->
 <section>
 <h2>Education</h2>
+<div class="grid">
 <div class="card">
-<b>MSc Data Science</b> — University of Greenwich (2025–2026)
+<b>MSc Data Science</b><br>
+University of Greenwich (2025–2026)
 </div>
+
 <div class="card">
 <b>BSc Electrical & Electronics Engineering</b>
+</div>
+</div>
+</section>
+
+<!-- IMPACT -->
+<section>
+<h2>Professional Impact</h2>
+<div class="grid">
+<div class="card"><div class="stat">2+</div>Years Experience</div>
+<div class="card"><div class="stat">100%</div>End-to-End Analytics</div>
+<div class="card"><div class="stat">3</div>Core Platforms</div>
 </div>
 </section>
 
 <!-- CONTACT -->
 <section>
 <h2>Let's Connect</h2>
-<p>Open to data science and analytics opportunities.</p>
-
-<p>
-📍 Hounslow, United Kingdom<br>
-📧 ebhargavnadh@gmail.com
-</p>
+<div class="card">
+📍 Hounslow, United Kingdom<br><br>
+📧 ebhargavnadh@gmail.com<br><br>
+Open to Data Science & Analytics opportunities.
+</div>
 </section>
 
 </body>
